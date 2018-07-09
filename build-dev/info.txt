@@ -1,0 +1,5 @@
+======= Comandos Docker =======
+
+docker image build -t python-server .
+docker container run -it -v $(pwd):/app -p 80:8000 --name python-srv python-server
+docker container start -ai python-srv
