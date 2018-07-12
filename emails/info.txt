@@ -14,4 +14,6 @@ docker-compose exec db psql -U postgres -f /scripts/check.sql
 docker-compose logs -f -t
 
 4 -
+docker-compose logs -f -t
 
+5 -
