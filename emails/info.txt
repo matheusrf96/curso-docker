@@ -1,3 +1,5 @@
+Obs.: Baseado no curso: https://www.udemy.com/curso-docker/
+
 ===== Comandos =====
 
 1 -
@@ -25,3 +27,10 @@ docker-compose logs -f -t
 
 7 - 
 docker-compose exec db psql -U postgres -d email_sender -c "SELECT * FROM emails"
+
+8 -
+...
+
+9 - 
+docker-compose up -d --scale worker=3
+docker-compose logs -f -t worker
