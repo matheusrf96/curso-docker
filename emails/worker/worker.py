@@ -11,6 +11,6 @@ if __name__ == '__main__':
 
     while True:
         mensagem = json.loads(r.blpop('sender')[1])
-        print('Mandando a mensagem:', mensagem['assunto'])
+        print('Mandando a mensagem: (', mensagem['assunto'], ')')
         sleep(randint(10, 15))
-        print('Mensagem', mensagem['assunto'], 'enviada')
+        print('Mensagem (', mensagem['assunto'], ') enviada!')
